@@ -76,7 +76,7 @@ except Exception as e:
 # history_db를 deque로 설정하여 pop(0) 병목 현상 제거 (최대 100개 유지)
 def load_recent_history():
     try:
-        db_file = get_full_path("여주보_예측_1차통합_데이터셋(20~25).csv")
+        db_file = get_full_path("여주보_예측_필요_최근100행_데이터셋.csv")
         df = pd.read_csv(db_file).tail(100)
         return deque(df.to_dict('records'), maxlen=100)
     except:
