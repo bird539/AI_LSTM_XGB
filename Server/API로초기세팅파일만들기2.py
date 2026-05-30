@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 # ==========================================
 # 0. 사용자 설정 정보 (인증키 및 관측소)
 # ==========================================
-SERVICE_KEY = "E69115D5-A77E-4B27-B7E7-99A1A1AA8B15"
+SERVICE_KEY = "KEY"
 OUTPUT_FILENAME = "여주보_예측_필요_최근100행_데이터셋.csv"
 
 OBS_CODES = {
